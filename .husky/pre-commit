@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# --no 表示使用本地的 lint-staged，-- 是命令分隔符，代表 npx 的传参结束
+npx --no -- lint-staged
